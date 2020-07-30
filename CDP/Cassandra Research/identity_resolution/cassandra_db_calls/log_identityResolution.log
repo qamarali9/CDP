@@ -1,0 +1,511 @@
+2020-07-20 13:02:37,803 - __main__ - ERROR - (In create_db()) Could not create keyspace - cdp
+2020-07-20 13:04:52,885 - connection - INFO - get_connection() called with params (config : {} , keyspace : testdb)
+2020-07-20 13:04:52,906 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : testdb)
+2020-07-20 13:04:53,549 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 13:04:53,553 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 13:04:53,555 - identities - INFO - delete() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 13:04:53,567 - identities - INFO - delete_query executed : 
+        DELETE FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        IF EXISTS
+        ;
+        
+2020-07-20 13:04:54,415 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 13:04:54,419 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 13:04:54,419 - identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 13:04:54,428 - identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 13:04:55,234 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 13:04:55,237 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 13:04:55,992 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:number,cid:123,uid:98)
+2020-07-20 13:04:55,994 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','number', 123, 98, toTimeStamp(now()))
+        ;
+        
+2020-07-20 13:04:55,994 - identities - INFO - update() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 13:04:55,995 - identities - INFO - update_query executed : 
+        UPDATE identities
+        SET type = 'mail',
+        uid = 76 
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 13:07:13,510 - connection - INFO - get_connection() called with params (config : {} , keyspace : testdb)
+2020-07-20 13:07:13,528 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : testdb)
+2020-07-20 13:07:14,120 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 13:07:14,122 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 13:07:14,122 - identities - INFO - delete() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 13:07:14,125 - identities - INFO - delete_query executed : 
+        DELETE FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        IF EXISTS
+        ;
+        
+2020-07-20 13:07:14,918 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 13:07:14,920 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 13:07:14,920 - identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 13:07:14,922 - identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 13:07:15,710 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 13:07:15,712 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 13:07:16,468 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:number,cid:123,uid:98)
+2020-07-20 13:07:16,470 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','number', 123, 98, toTimeStamp(now()))
+        ;
+        
+2020-07-20 13:07:16,470 - identities - INFO - update() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 13:07:16,472 - identities - INFO - update_query executed : 
+        UPDATE identities
+        SET type = 'mail',
+        uid = 76 
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 13:10:13,669 - __main__ - INFO - create_db() called
+2020-07-20 13:10:13,703 - __main__ - INFO - Created keyspace cdp
+2020-07-20 13:10:13,703 - __main__ - INFO - create_table() called
+2020-07-20 13:13:00,258 - __main__ - INFO - create_db() called
+2020-07-20 13:13:00,290 - __main__ - INFO - Created keyspace cdp
+2020-07-20 13:13:00,290 - __main__ - INFO - create_table() called
+2020-07-20 13:15:21,309 - __main__ - INFO - create_db() called
+2020-07-20 13:15:21,310 - __main__ - ERROR - (In create_db()) Could not create keyspace - cdp
+2020-07-20 13:18:04,472 - __main__ - INFO - create_db() called
+2020-07-20 13:18:04,473 - __main__ - ERROR - (In create_db()) Could not create keyspace - cdp
+2020-07-20 13:18:04,473 - __main__ - INFO - create_table() called
+2020-07-20 13:18:04,473 - __main__ - ERROR - (In create_table()) Could not create table - identities
+2020-07-20 13:18:31,218 - __main__ - INFO - create_db() called
+2020-07-20 13:18:31,247 - __main__ - INFO - Created keyspace cdp
+2020-07-20 13:18:31,247 - __main__ - INFO - create_table() called
+2020-07-20 13:19:14,101 - connection - INFO - get_connection() called with params (config : {} , keyspace : testdb)
+2020-07-20 13:19:14,136 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : testdb)
+2020-07-20 13:19:14,533 - init_db - INFO - create_table() called
+2020-07-20 13:19:14,609 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 13:19:14,611 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 13:19:14,611 - identities - INFO - delete() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 13:19:14,616 - identities - INFO - delete_query executed : 
+        DELETE FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        IF EXISTS
+        ;
+        
+2020-07-20 13:19:15,389 - init_db - INFO - create_table() called
+2020-07-20 13:19:15,468 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 13:19:15,469 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 13:19:15,469 - identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 13:19:15,470 - identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 13:19:16,116 - init_db - INFO - create_table() called
+2020-07-20 13:19:16,230 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 13:19:16,234 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 13:19:16,929 - init_db - INFO - create_table() called
+2020-07-20 13:19:17,017 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:number,cid:123,uid:98)
+2020-07-20 13:19:17,021 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','number', 123, 98, toTimeStamp(now()))
+        ;
+        
+2020-07-20 13:19:17,022 - identities - INFO - update() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 13:19:17,024 - identities - INFO - update_query executed : 
+        UPDATE identities
+        SET type = 'mail',
+        uid = 76 
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 16:14:41,036 - connection - INFO - get_connection() called with params (config : {} , keyspace : testdb)
+2020-07-20 16:14:41,095 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : testdb)
+2020-07-20 16:14:41,666 - init_db - INFO - create_table() called
+2020-07-20 16:14:41,811 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 16:14:41,833 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 16:14:41,833 - identities - INFO - delete() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 16:14:41,906 - identities - INFO - delete_query executed : 
+        DELETE FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        IF EXISTS
+        ;
+        
+2020-07-20 16:14:42,744 - init_db - INFO - create_table() called
+2020-07-20 16:14:42,873 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 16:14:42,876 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 16:14:42,876 - identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 16:14:42,883 - identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 16:14:43,611 - init_db - INFO - create_table() called
+2020-07-20 16:14:43,751 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 16:14:43,754 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 16:14:44,761 - init_db - INFO - create_table() called
+2020-07-20 16:14:44,947 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:number,cid:123,uid:98)
+2020-07-20 16:14:44,949 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','number', 123, 98, toTimeStamp(now()))
+        ;
+        
+2020-07-20 16:14:44,950 - identities - INFO - update() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 16:14:44,952 - identities - INFO - update_query executed : 
+        UPDATE identities
+        SET type = 'mail',
+        uid = 76 
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 16:45:29,153 - connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-20 16:45:29,184 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-20 16:45:31,211 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 16:45:31,214 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 16:45:37,194 - identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 16:45:37,202 - identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 16:45:42,427 - identities - INFO - update() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:98)
+2020-07-20 16:45:42,433 - identities - INFO - update_query executed : 
+        UPDATE identities
+        SET type = 'mail',
+        uid = 98 
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 16:45:42,434 - identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 16:45:42,440 - identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 16:45:44,701 - identities - INFO - delete() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 16:45:44,723 - identities - INFO - delete_query executed : 
+        DELETE FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        IF EXISTS
+        ;
+        
+2020-07-20 16:46:29,503 - connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-20 16:46:29,530 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-20 16:46:32,204 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 16:46:32,207 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 16:46:47,008 - identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 16:46:47,012 - identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 16:46:56,638 - identities - INFO - update() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:98)
+2020-07-20 16:46:56,641 - identities - INFO - update_query executed : 
+        UPDATE identities
+        SET type = 'mail',
+        uid = 98 
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 16:46:56,641 - identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 16:46:56,644 - identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-20 16:47:11,436 - identities - INFO - delete() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-20 16:47:11,442 - identities - INFO - delete_query executed : 
+        DELETE FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        IF EXISTS
+        ;
+        
+2020-07-20 16:47:51,907 - connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-20 16:47:51,932 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-20 16:47:53,567 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-20 16:47:53,569 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        ;
+        
+2020-07-20 16:52:20,526 - connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-20 16:52:20,555 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-20 16:52:22,800 - identities - INFO - put() called with parameters (identity:roy@gmail.com,identity_type:mail,cid:123,uid:98)
+2020-07-20 16:52:22,802 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('roy@gmail.com','mail', 123, 98, toTimeStamp(now()))
+        ;
+        
+2020-07-20 16:53:08,900 - connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-20 16:53:08,936 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-20 16:53:10,397 - identities - INFO - put() called with parameters (identity:roy@gmail.com,identity_type:mail,cid:123,uid:98)
+2020-07-20 16:53:10,399 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('roy@gmail.com','mail', 123, 98, toTimeStamp(now()))
+        ;
+        
+2020-07-20 16:54:38,356 - connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-20 16:54:38,382 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-20 16:54:39,781 - identities - INFO - put() called with parameters (identity:roy@gmail.com,identity_type:mail,cid:123,uid:98)
+2020-07-20 16:54:39,783 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('roy@gmail.com','mail', 123, 98, toTimeStamp(now()))
+        ;
+        
+2020-07-20 16:55:25,878 - connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-20 16:55:25,909 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-20 16:55:27,550 - identities - INFO - put() called with parameters (identity:roy@gmail.com,identity_type:mail,cid:123,uid:98)
+2020-07-20 16:55:27,552 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('roy@gmail.com','mail', 123, 98, toTimeStamp(now()))
+        ;
+        
+2020-07-20 16:56:21,514 - connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-20 16:56:21,541 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-20 16:56:23,226 - identities - INFO - put() called with parameters (identity:roy@gmail.com,identity_type:mail,cid:123,uid:98)
+2020-07-20 16:56:23,229 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('roy@gmail.com','mail', 123, 98, toTimeStamp(now()))
+        ;
+        
+2020-07-20 16:57:45,052 - connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-20 16:57:45,088 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-20 16:57:46,664 - identities - INFO - put() called with parameters (identity:roy@gmail.com,identity_type:mail,cid:123,uid:89)
+2020-07-20 16:57:46,667 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('roy@gmail.com','mail', 123, 89, toTimeStamp(now()))
+        ;
+        
+2020-07-20 18:31:53,574 - connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-20 18:31:53,594 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-20 18:31:55,895 - identities - INFO - put() called with parameters (identity:roy@gmail.com,identity_type:mail,cid:123,uid:89)
+2020-07-20 18:31:55,909 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('roy@gmail.com','mail', 123, 89, toTimeStamp(now()))
+        IF NOT EXISTS
+        ;
+        
+2020-07-20 18:33:19,601 - connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-20 18:33:19,621 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-20 18:33:22,522 - identities - INFO - put() called with parameters (identity:roy@gmail.com,identity_type:mail,cid:123,uid:89)
+2020-07-20 18:33:22,531 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('roy@gmail.com','mail', 123, 89, toTimeStamp(now()))
+        IF NOT EXISTS
+        ;
+        
+2020-07-20 18:34:48,641 - connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-20 18:34:48,660 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-20 18:34:50,840 - identities - INFO - put() called with parameters (identity:roy@gmail.com,identity_type:mail,cid:123,uid:1111)
+2020-07-20 18:34:50,850 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('roy@gmail.com','mail', 123, 1111, toTimeStamp(now()))
+        IF NOT EXISTS
+        ;
+        
+2020-07-21 09:48:53,738 - connection - INFO - get_connection() called with params (config : {} , keyspace : testdb)
+2020-07-21 09:48:53,758 - connection - INFO - Created a Cassandra session with params (config : {} , keyspace : testdb)
+2020-07-21 09:48:54,245 - init_db - INFO - create_table() called
+2020-07-21 09:48:54,348 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-21 09:48:54,369 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        IF NOT EXISTS
+        ;
+        
+2020-07-21 09:48:54,369 - identities - INFO - Record inserted
+2020-07-21 09:48:54,369 - identities - INFO - delete() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-21 09:48:54,373 - identities - INFO - delete_query executed : 
+        DELETE FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        IF EXISTS
+        ;
+        
+2020-07-21 09:48:55,102 - init_db - INFO - create_table() called
+2020-07-21 09:48:55,178 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-21 09:48:55,183 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        IF NOT EXISTS
+        ;
+        
+2020-07-21 09:48:55,183 - identities - INFO - Record inserted
+2020-07-21 09:48:55,183 - identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-21 09:48:55,185 - identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-21 09:48:56,085 - init_db - INFO - create_table() called
+2020-07-21 09:48:56,239 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-21 09:48:56,251 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 123, 76, toTimeStamp(now()))
+        IF NOT EXISTS
+        ;
+        
+2020-07-21 09:48:56,252 - identities - INFO - Record inserted
+2020-07-21 09:48:56,997 - init_db - INFO - create_table() called
+2020-07-21 09:48:57,126 - identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:number,cid:123,uid:98)
+2020-07-21 09:48:57,138 - identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','number', 123, 98, toTimeStamp(now()))
+        IF NOT EXISTS
+        ;
+        
+2020-07-21 09:48:57,138 - identities - INFO - Record inserted
+2020-07-21 09:48:57,138 - identities - INFO - update() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123,uid:76)
+2020-07-21 09:48:57,150 - identities - INFO - update_query executed : 
+        UPDATE identities
+        SET type = 'mail',
+        uid = 76 
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        

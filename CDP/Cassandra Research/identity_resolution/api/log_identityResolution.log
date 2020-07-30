@@ -1,0 +1,92 @@
+2020-07-24 14:28:06,682 - cassandra_db_calls.connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-24 14:28:06,712 - cassandra_db_calls.connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-24 14:28:06,712 - cassandra_db_calls.identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-24 14:28:06,716 - cassandra_db_calls.identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-24 14:31:00,577 - cassandra_db_calls.connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-24 14:31:00,635 - cassandra_db_calls.connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-24 14:31:00,635 - cassandra_db_calls.identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-24 14:31:00,638 - cassandra_db_calls.identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-24 14:31:25,865 - cassandra_db_calls.connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-24 14:31:25,971 - cassandra_db_calls.connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-24 14:31:25,971 - cassandra_db_calls.identities - INFO - get() called with parameters (identity:roy@gmail.com,identity_type:mail,cid:123)
+2020-07-24 14:31:25,975 - cassandra_db_calls.identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'roy@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-27 20:00:25,188 - cassandra_db_calls.connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-27 20:00:25,372 - cassandra_db_calls.connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-27 20:00:25,372 - cassandra_db_calls.identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-27 20:00:25,381 - cassandra_db_calls.identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-27 20:00:46,081 - cassandra_db_calls.connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-27 20:00:46,187 - cassandra_db_calls.connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-27 20:00:46,187 - cassandra_db_calls.identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:156)
+2020-07-27 20:00:46,190 - cassandra_db_calls.identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 156
+        ;
+        
+2020-07-27 20:05:27,450 - cassandra_db_calls.connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-27 20:05:27,559 - cassandra_db_calls.connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-27 20:05:27,559 - cassandra_db_calls.identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:156)
+2020-07-27 20:05:27,562 - cassandra_db_calls.identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 156
+        ;
+        
+2020-07-27 20:05:27,570 - cassandra_db_calls.identities - INFO - put() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:156,uid:7)
+2020-07-27 20:05:27,627 - cassandra_db_calls.identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('mark@gmail.com','mail', 156, 7, toTimeStamp(now()))
+        IF NOT EXISTS
+        ;
+        
+2020-07-27 20:05:27,627 - cassandra_db_calls.identities - INFO - Record inserted
+2020-07-27 20:06:35,794 - cassandra_db_calls.connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-27 20:06:35,909 - cassandra_db_calls.connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-27 20:06:35,909 - cassandra_db_calls.identities - INFO - get() called with parameters (identity:mark@gmail.com,identity_type:mail,cid:123)
+2020-07-27 20:06:35,912 - cassandra_db_calls.identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'mark@gmail.com' AND
+        cid = 123
+        ;
+        
+2020-07-27 20:07:08,587 - cassandra_db_calls.connection - INFO - get_connection() called with params (config : {} , keyspace : cdp)
+2020-07-27 20:07:08,644 - cassandra_db_calls.connection - INFO - Created a Cassandra session with params (config : {} , keyspace : cdp)
+2020-07-27 20:07:08,644 - cassandra_db_calls.identities - INFO - get() called with parameters (identity:somebody@gmail.com,identity_type:mail,cid:546)
+2020-07-27 20:07:08,646 - cassandra_db_calls.identities - INFO - select_query executed : 
+        SELECT uid FROM identities
+        WHERE identity = 'somebody@gmail.com' AND
+        cid = 546
+        ;
+        
+2020-07-27 20:07:08,647 - cassandra_db_calls.identities - INFO - put() called with parameters (identity:somebody@gmail.com,identity_type:mail,cid:546,uid:8)
+2020-07-27 20:07:08,652 - cassandra_db_calls.identities - INFO - insert_query executed : 
+        INSERT INTO identities
+        (identity, type, cid, uid, createdtime)
+        VALUES
+        ('somebody@gmail.com','mail', 546, 8, toTimeStamp(now()))
+        IF NOT EXISTS
+        ;
+        
+2020-07-27 20:07:08,653 - cassandra_db_calls.identities - INFO - Record inserted

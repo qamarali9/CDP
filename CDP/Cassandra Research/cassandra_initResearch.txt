@@ -1,0 +1,14 @@
+- Floss Weekly 183 : Cassandra : https://twit.tv/shows/floss-weekly/episodes/183
+- DataStax Cassandra Tutorials : Apache Cassandra Overview : https://www.youtube.com/watch?v=5qEoEAfAer8
+- https://cassandra.apache.org/doc/latest/getting_started/index.html
+- What is Cassandra (database software)? https://www.quora.com/?activity_story=87829446
+- Which companies use Cassandra? https://www.quora.com/?activity_story=1968742
+- What are the pros and cons of using the Cassandra database? https://www.quora.com/?activity_story=18233794
+- Is Cassandra an in memory database? https://www.quora.com/?activity_story=159387091
+- How does Cassandra differ from Hadoop? https://www.quora.com/?activity_story=19028875
+- How do you compare Postgres to Cassandra for big data application? https://www.quora.com/?activity_story=45504669
+- How do we choose between Cassandra, MongoDB and Hive? https://www.quora.com/?activity_story=20681768
+- Does bigtable, cassandra belong to column store database? https://www.quora.com/?activity_story=1245582
+- Is Cassandra any good? https://www.quora.com/?activity_story=19254
+- Where does Apache Cassandra store data? https://www.quora.com/?activity_story=18881520
+- Bigtable: A Distributed Storage System for Structured Data : https://research.google/pubs/pub27898/
